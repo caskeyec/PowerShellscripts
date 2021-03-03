@@ -1,0 +1,1 @@
+ Get-ADComputer -Server "<domain>" -Filter * -Prop IPv4Address | Where-Object { $_.IPv4Address -like "172.17.217.*"} | Export-CSV -Path C:\Users\<username>\AustinWorkstations.csv -Append
