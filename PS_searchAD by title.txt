@@ -1,0 +1,1 @@
+Get-ADuser -filter {Title -like "*VP*"} -Properties * | select Name, Title | export-csv "filename.csv"
